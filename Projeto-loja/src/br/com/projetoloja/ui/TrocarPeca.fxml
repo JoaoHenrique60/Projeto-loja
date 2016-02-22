@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projetoloja.uicontroller.ControllerTrocarPeca">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="208.0" layoutX="252.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/produto-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="12.0" layoutY="297.0" text="Cod produto:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="321.0" layoutY="298.0" text="Cod. novo Produto:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="236.0" layoutY="400.0" prefHeight="30.0" prefWidth="258.0" text="Confirme as informações" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="34.0" layoutY="445.0" prefHeight="30.0" prefWidth="183.0" text="Produto anterior:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="59.0" layoutY="489.0" prefHeight="30.0" prefWidth="157.0" text="Novo Produto:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="produtoAntigoLabel" layoutX="223.0" layoutY="445.0" prefHeight="30.0" prefWidth="472.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="novoProdutoLabel" layoutX="224.0" layoutY="489.0" prefHeight="30.0" prefWidth="472.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codProdutoAntigo" layoutX="150.0" layoutY="296.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" onKeyPressed="#inputProdutoAntigo" prefHeight="30.0" prefWidth="150.0" />
+            <TextField fx:id="codProdutoNovo" layoutX="515.0" layoutY="295.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" onKeyPressed="#inputNovoProduto" prefHeight="30.0" prefWidth="200.0" />
+            <Button layoutX="565.0" layoutY="545.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#finalizar" prefHeight="40.0" prefWidth="150.0" text="Finalizar" />
+            <Button layoutX="402.0" layoutY="545.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#voltar" prefHeight="40.0" prefWidth="150.0" text="Voltar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

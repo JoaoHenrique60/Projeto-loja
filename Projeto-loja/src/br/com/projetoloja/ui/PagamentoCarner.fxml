@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projetoloja.uicontroller.ControllerFinalizarPagamentoCarner">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <ImageView fitHeight="187.0" fitWidth="178.0" layoutX="262.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/produto-icon.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" layoutX="375.0" layoutY="233.0" prefHeight="30.0" prefWidth="129.0" text="Entrada:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="21.0" layoutY="233.0" prefHeight="30.0" prefWidth="129.0" text="Cod. Cliente:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="240.0" layoutY="286.0" prefHeight="30.0" prefWidth="255.0" text="Confirme as informações" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="107.0" layoutY="334.0" prefHeight="30.0" prefWidth="68.0" text="Nome:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="365.0" prefHeight="30.0" prefWidth="147.0" text="valor Compra:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="397.0" prefHeight="30.0" prefWidth="163.0" text="valor em conta:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="429.0" prefHeight="30.0" prefWidth="147.0" text="valor Entrada:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomeLabel" layoutX="176.0" layoutY="334.0" prefHeight="30.0" prefWidth="500.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorCompraLabel" layoutX="176.0" layoutY="365.0" prefHeight="30.0" prefWidth="183.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorContaLabel" layoutX="176.0" layoutY="397.0" prefHeight="30.0" prefWidth="181.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="entradaLabel" layoutX="176.0" layoutY="429.0" prefHeight="30.0" prefWidth="181.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codInput" layoutX="151.0" layoutY="233.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="167.0" onKeyPressed="#atualizaCodCliente" prefHeight="30.0" prefWidth="167.0" />
+            <TextField fx:id="entradaInput" layoutX="505.0" layoutY="233.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="167.0" onKeyPressed="#atualizaEntrada" prefHeight="30.0" prefWidth="167.0" />
+            <Button layoutX="565.0" layoutY="545.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#finalizar" prefHeight="40.0" prefWidth="150.0" text="Finalizar" />
+            <Button layoutX="399.0" layoutY="546.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="40.0" prefWidth="150.0" text="Cancelar" />
+            <Label alignment="CENTER_RIGHT" layoutX="41.0" layoutY="461.0" prefHeight="30.0" prefWidth="134.0" text="valor a total:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorTotalLabel" layoutX="176.0" layoutY="461.0" prefHeight="30.0" prefWidth="181.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projetoloja.uicontroller.ControllerMaisDetalhesProduto">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/case-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="295.0" layoutY="245.0" prefHeight="30.0" prefWidth="36.0" text="ID:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="285.0" prefHeight="30.0" prefWidth="79.0" text="Nome:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="325.0" prefHeight="30.0" prefWidth="125.0" text="Quantidade:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="365.0" prefHeight="30.0" prefWidth="205.0" text="Quantidade Minima:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="404.0" prefHeight="30.0" prefWidth="184.0" text="Valor de Compra:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="154.0" layoutY="444.0" prefHeight="30.0" prefWidth="175.0" text="Valor de Vanda:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="269.0" layoutY="484.0" prefHeight="30.0" prefWidth="58.0" text="Ativo:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="idBanco" layoutX="343.0" layoutY="245.0" prefHeight="30.0" prefWidth="98.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomeBanco" layoutX="342.0" layoutY="285.0" prefHeight="30.0" prefWidth="108.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantidadeBanco" layoutX="342.0" layoutY="325.0" prefHeight="30.0" prefWidth="108.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantidadeMinimaBanco" layoutX="342.0" layoutY="366.0" prefHeight="30.0" prefWidth="108.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorCompraBanco" layoutX="340.0" layoutY="404.0" prefHeight="30.0" prefWidth="98.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorVendaBanco" layoutX="339.0" layoutY="445.0" prefHeight="30.0" prefWidth="108.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="ativoBanco" layoutX="337.0" layoutY="485.0" prefHeight="30.0" prefWidth="108.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="275.0" layoutY="541.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#voltar" prefHeight="40.0" prefWidth="150.0" text="Voltar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

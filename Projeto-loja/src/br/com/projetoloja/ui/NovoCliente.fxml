@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="br.com.projetoloja.uicontroller.ControllerNovoCliente">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="740.0" minHeight="600.0" minWidth="740.0" prefHeight="600.0" prefWidth="740.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <Label layoutX="297.0" layoutY="38.0" text="Novo Cliente" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="118.0" text="Dados Pessoais" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="483.0" layoutY="118.0" text="Endereço" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomeInput" layoutX="26.0" layoutY="197.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Nome" />
+            <TextField fx:id="cpfIntup" layoutX="26.0" layoutY="247.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="CPF" />
+            <TextField fx:id="telefoneInput" layoutX="26.0" layoutY="297.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Telefone" />
+            <TextField fx:id="celularInput" layoutX="26.0" layoutY="347.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Celular" />
+            <Separator layoutX="360.0" layoutY="100.0" maxHeight="400.0" maxWidth="1.0" minHeight="400.0" minWidth="1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="1.0" />
+            <TextField fx:id="cepInput" layoutX="400.0" layoutY="197.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Cep" />
+            <TextField fx:id="cidadeInput" layoutX="400.0" layoutY="247.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Cidade" />
+            <TextField fx:id="bairroIntup" layoutX="400.0" layoutY="297.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Bairro" />
+            <TextField fx:id="ruaInput" layoutX="400.0" layoutY="347.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Rua" />
+            <TextField fx:id="numeroInput" layoutX="400.0" layoutY="397.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Numero" />
+            <TextField fx:id="complementoInput" layoutX="400.0" layoutY="447.0" maxHeight="40.0" maxWidth="300.0" minHeight="40.0" minWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Complemento" />
+            <Button onAction="#finalizar" layoutX="629.0" layoutY="545.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Finalizar" />
+            <Button onAction="#novo" layoutX="510.0" layoutY="545.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Novo" />
+            <Button onAction="#cancelar" layoutX="390.0" layoutY="545.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Cancelar" />
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="150.0" styleClass="background1" stylesheets="@../css/TesteCss.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.projetoloja.uicontroller.ControllerMenuprincipal">
+   <children>
+      <Label onMouseClicked="#home" fx:id="home" layoutX="30.0" stylesheets="@../css/TesteCss.css" />
+      <Label onMouseClicked="#telaCliente" fx:id="cliente" layoutX="30.0" layoutY="100.0" />
+      <Label onMouseClicked="#telaProdutos" fx:id="produto" layoutX="30.0" layoutY="200.0" />
+      <Label onMouseClicked="#gerenciar" fx:id="gerenciar" layoutX="30.0" layoutY="300.0" />
+      <Label onMouseClicked="#ajuda" fx:id="ajuda" layoutX="30.0" layoutY="400.0" />
+      <Label onMouseClicked="#sair" fx:id="sair" layoutX="30.0" layoutY="500.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="br.com.projetoloja.uicontroller.ControllerTrocarPecaCliente">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="208.0" layoutX="252.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/produto-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="82.0" layoutY="293.0" text="Cod: Produto:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="343.0" text="Cod. novo Produto:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="236.0" layoutY="400.0" prefHeight="30.0" prefWidth="229.0" text="Confirme as informações" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="445.0" prefHeight="30.0" prefWidth="173.0" text="Produto anterior:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="489.0" prefHeight="30.0" prefWidth="150.0" text="Novo Produto:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="produtoAntigo" layoutX="212.0" layoutY="445.0" prefHeight="30.0" prefWidth="200.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="novoProduto" layoutX="210.0" layoutY="489.0" prefHeight="30.0" prefWidth="196.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codProdutoNovo" layoutX="214.0" layoutY="296.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="200.0" prefHeight="30.0" prefWidth="200.0" />
+            <TextField fx:id="codProdutoAntigo" layoutX="214.0" layoutY="343.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="200.0" prefHeight="30.0" prefWidth="200.0" />
+            <Button layoutX="565.0" layoutY="545.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#finalizar" prefHeight="40.0" prefWidth="150.0" text="Finalizar" />
+            <Button layoutX="402.0" layoutY="545.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#voltar" prefHeight="40.0" prefWidth="150.0" text="Voltar" />
+            <Label alignment="CENTER_RIGHT" layoutX="33.0" layoutY="252.0" prefHeight="30.0" prefWidth="167.0" text="Cliente:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomeBanco" layoutX="210.0" layoutY="252.0" prefHeight="30.0" prefWidth="200.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

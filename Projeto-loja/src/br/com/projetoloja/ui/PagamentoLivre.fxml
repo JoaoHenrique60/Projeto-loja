@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="br.com.projetoloja.uicontroller.ControllerPagamentoLivre">
+   <children>
+      <Pane maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" styleClass="background1" stylesheets="@../css/Teste2Css.css">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="208.0" layoutX="252.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/produto-icon.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" layoutX="43.0" layoutY="285.0" prefHeight="30.0" prefWidth="130.0" text="Cod. conta:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="316.0" prefHeight="30.0" prefWidth="66.0" text="Nome:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="34.0" layoutY="378.0" prefHeight="30.0" prefWidth="140.0" text="pagamento:" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="codBanco" layoutX="174.0" layoutY="285.0" prefHeight="30.0" prefWidth="196.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomeBanco" layoutX="175.0" layoutY="316.0" prefHeight="30.0" prefWidth="196.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="580.0" layoutY="546.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#pagar" prefHeight="40.0" prefWidth="150.0" text="Pagar" />
+            <Button layoutX="403.0" layoutY="546.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#voltar" prefHeight="40.0" prefWidth="150.0" text="Voltar" />
+            <TextField fx:id="valorInput" layoutX="175.0" layoutY="378.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="200.0" prefHeight="30.0" prefWidth="200.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="347.0" prefHeight="30.0" prefWidth="66.0" text="valor:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="valorBanco" layoutX="175.0" layoutY="347.0" prefHeight="30.0" prefWidth="196.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
